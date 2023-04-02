@@ -13,8 +13,8 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='/', intents=intents, help_command=None)
 target_channel_id = 1029791023804731392
 
-hourSign = [time.fromisoformat('07:15:00'), time.fromisoformat('09:00:00'), time.fromisoformat('10:45:00'),
-            time.fromisoformat('13:15:00'), time.fromisoformat('15:00:00')]
+hourSign = [time.fromisoformat('06:15:00'), time.fromisoformat('08:00:00'), time.fromisoformat('09:45:00'),
+            time.fromisoformat('12:15:00'), time.fromisoformat('14:00:00')]
 
 
 @tasks.loop(time=hourSign)
